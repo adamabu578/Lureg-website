@@ -53,7 +53,7 @@ export function Navbar() {
           {/* Mobile Menu Button */}
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" className="md:hidden rounded-full">
+              <Button variant="ghost" size="icon" className="md:hidden rounded-full w-12 h-12 p-0">
                 <AnimatePresence mode="wait">
                   {isOpen ? (
                     <motion.div
@@ -73,7 +73,7 @@ export function Navbar() {
                       exit={{ rotate: -90, opacity: 0 }}
                       transition={{ duration: 0.2 }}
                     >
-                      <Menu className="h-6 w-6" />
+                      <Menu className="h-8 w-8" />
                     </motion.div>
                   )}
                 </AnimatePresence>
