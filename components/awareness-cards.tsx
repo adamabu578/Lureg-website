@@ -11,7 +11,7 @@ const cards = [
     title: "Awareness",
     description:
       "Raising awareness about lupus and its impact on individuals and families through education and outreach programs.",
-    href: "/awareness",
+    // href: "/awareness",
     color: "from-red-500 to-pink-500",
     bgColor: "from-red-50 to-pink-50",
   },
@@ -19,7 +19,7 @@ const cards = [
     icon: Megaphone,
     title: "Advocacy",
     description: "Advocating for better healthcare policies, research funding, and support systems for lupus patients.",
-    href: "/advocacy",
+    // href: "/advocacy",
     color: "from-purple-500 to-indigo-500",
     bgColor: "from-purple-50 to-indigo-50",
   },
@@ -27,7 +27,7 @@ const cards = [
     icon: HandHeart,
     title: "Support",
     description: "Providing emotional, financial, and practical support to lupus warriors and their families.",
-    href: "/support",
+    // href: "/support",
     color: "from-green-500 to-emerald-500",
     bgColor: "from-green-50 to-emerald-50",
   },
@@ -35,7 +35,7 @@ const cards = [
     icon: Users,
     title: "Networking",
     description: "Creating connections and building a strong community of lupus warriors, caregivers, and supporters.",
-    href: "/networking",
+    // href: "/networking",
     color: "from-blue-500 to-cyan-500",
     bgColor: "from-blue-50 to-cyan-50",
   },
@@ -228,7 +228,7 @@ export function AwarenessCards() {
               whileHover="hover"
               className="group h-full perspective-1000"
             >
-              <Link href={card.href}>
+              {/* <Link href={card.href}> */}
                 <div
                   className={`relative bg-gradient-to-br ${card.bgColor} rounded-3xl p-8 lg:p-10 shadow-xl hover:shadow-2xl transition-all duration-500 border border-white/50 text-center h-full flex flex-col justify-between min-h-[320px] backdrop-blur-sm overflow-hidden`}
                 >
@@ -307,7 +307,7 @@ export function AwarenessCards() {
                     transition={{ duration: 0.3 }}
                   />
                 </div>
-              </Link>
+              {/* </Link> */}
             </motion.div>
           ))}
         </div>
