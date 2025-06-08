@@ -137,7 +137,7 @@ export function Navbar() {
       className="bg-white shadow-md fixed w-full top-0 z-50"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-16 bg-blue-500 p-6">
 
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
@@ -184,7 +184,7 @@ export function Navbar() {
                         exit={{ rotate: -90, opacity: 0 }}
                         transition={{ duration: 0.2 }}
                       >
-                        <Menu className="h-6 w-6" />
+                        <Menu className="h-10 w-20" />
                       </motion.div>
                     )}
                   </AnimatePresence>
